@@ -45,10 +45,10 @@ size_t lomuto_partition(int *array, size_t low, size_t high)
 			swap(&array[i], &array[j]);
 			print_array(array, high + 1);
 		}
-		swap(&array[i + 1], &array[high]);
-		print_array(array, high + 1);
 	}
-	
+	swap(&array[i + 1], &array[high]);
+	print_array(array, high + 1);
+
 	return (i + 1);
 }
 
